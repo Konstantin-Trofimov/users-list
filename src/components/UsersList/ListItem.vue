@@ -25,5 +25,5 @@ export default {
       return this.user.childrens.length > 0 ? '+' : null;
     },
   },
-}
+};
 </script>

@@ -35,6 +35,6 @@ export default {
     handleAddNewUser(newUser) {
       this.$emit('update:users', newUser);
     },
-  }
+  },
 };
 </script>

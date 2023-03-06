@@ -63,7 +63,7 @@ export default {
     },
 
     handleAddNewUser(evt) {
-      const form = evt.target
+      const form = evt.target;
       const { name, phone } = form.elements;
 
       const newUser = {

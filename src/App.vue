@@ -98,6 +98,5 @@ export default {
 
     this.saveData(this.users);
   },
- 
-}
+};
 </script>

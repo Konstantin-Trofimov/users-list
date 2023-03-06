@@ -49,7 +49,7 @@ export default {
     label: {
       type: String,
       required: true,
-    }
+    },
   },
 
   data() {
@@ -76,7 +76,7 @@ export default {
   computed: {
     optionsList() {
       return [{ name: '' }, ...this.options]
-    }
+    },
   },
 };
 </script>
