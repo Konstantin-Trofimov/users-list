@@ -77,7 +77,7 @@ export default {
       if (name.value && phone.value) {
         this.$emit('update:users', newUser);
 
-        form.reset()
+        form.reset();
       };
     },
   },

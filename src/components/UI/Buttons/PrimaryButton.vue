@@ -15,7 +15,7 @@ export default {
 
   props: {
     btnExtraStyle: {
-      type: String
+      type: String,
     },
   },
 };
