@@ -29,7 +29,6 @@ export default {
       required: true,
       default: () => [],
     },
-    
   },
 
   methods: {
