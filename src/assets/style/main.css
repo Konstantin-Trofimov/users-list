@@ -1,0 +1,40 @@
+:root {
+  --main-bg-color: #FFFFFF;
+  --primary-color: #DDDDDD;
+  --border-color: #B1B1B1;
+  --text-color: #818181;
+}
+
+* {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--main-bg-color);
+}
+
+.main-wrap {
+  padding: 6rem 5rem;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .main-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
