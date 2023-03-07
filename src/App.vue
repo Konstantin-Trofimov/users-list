@@ -33,7 +33,7 @@ export default {
     return {
       users: json,
       isModalVisible: false,
-    }
+    };
   },
 
   watch: {
@@ -62,7 +62,7 @@ export default {
         }
 
         return user;
-      })
+      });
     },
 
     setNewUserParents(parents) {
@@ -77,7 +77,7 @@ export default {
       return [
         ...array.slice(0, i + 1),
         item,
-        ...array.slice(i + 1)
+        ...array.slice(i + 1),
       ];
     },
 
