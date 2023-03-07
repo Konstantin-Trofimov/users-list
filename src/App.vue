@@ -89,7 +89,7 @@ export default {
   mounted() {
     if (localStorage.getItem('users')) {
       this.users = JSON.parse(localStorage.getItem('users'));
-    } 
+    }; 
 
     this.saveData(this.users);
   },
