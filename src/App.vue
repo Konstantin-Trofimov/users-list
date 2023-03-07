@@ -33,7 +33,7 @@ export default {
     return {
       users: json,
       isModalVisible: false,
-    };
+    }
   },
 
   watch: {
