@@ -48,21 +48,16 @@ export default {
     },
 
     handleAddNewUser(newUser) {
-      this.users.push(newUser); // add new user in user-list
+      this.users.push(newUser);
 
-      
       this.users.map((user, i, users) => {
-        if (user.id === newUser.supervisor) { // find new users parent
-          // update parents childrens data
+        if (user.id === newUser.supervisor) {
           user.childrens.push(parseInt(newUser.id)); 
 
-          // update new users parent data
           newUser.parents = this.setNewUserParents(user.parents); 
 
-          // delete last element in users-list
           this.users = this.deleteElementInArray(this.users, -1); 
 
-          // insert new users element in users-list after new users parent
           this.users = this.insertToArray(users, i, newUser); 
         }
 
@@ -71,7 +66,7 @@ export default {
     },
 
     setNewUserParents(parents) {
-      return parents ? parseInt(parents) + 1 : 1
+      return parents ? parseInt(parents) + 1 : 1;
     },
     
     deleteElementInArray(array, item = 0){

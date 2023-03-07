@@ -28,6 +28,7 @@ export default {
   user-select: none;
   display: flex;
   align-items: center;
+  
 }
 
 .select-wrap >>> .primary-select .selected.open {

@@ -6,11 +6,13 @@
     <layout>
       <div
         @blur="selectIsOpen = false"
-        class="primary-select">
+        class="primary-select"
+      >
         <div
           @click="handleOpenSelect"
           :class="{ open: selectIsOpen }"
           class="selected"
+          tabindex="0" 
         >
           <span>
             {{ selected }}
@@ -21,7 +23,7 @@
           <div
             v-for="option in optionsList"
             :key="option.id"
-            @click="handleSelecteOption(option)"
+            @click="handleSelectOption(option)"
           >
             {{ option.name }}
           </div>
@@ -60,7 +62,7 @@ export default {
   },
 
   methods: {
-    handleSelecteOption({ name, id }) {
+    handleSelectOption({ name, id }) {
       this.selected = name;
       this.selectIsOpen = false;
       this.$emit('input', id);

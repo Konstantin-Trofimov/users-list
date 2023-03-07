@@ -3,7 +3,7 @@
     :style="{ marginLeft: this.user.supervisor ? `${this.user.parents * 30}px` : null }"
     class="item"  
   >
-    <div>{{ isUserIsFolder }} {{  user.name }}</div>
+    <div>{{ userIsFolder }} {{  user.name }}</div>
 
     <div> {{ user.phone }}</div>
   </li>
@@ -21,7 +21,7 @@ export default {
   },
 
   computed: {
-    isUserIsFolder() {
+    userIsFolder() {
       return this.user.childrens.length > 0 ? '+' : null;
     },
   },
